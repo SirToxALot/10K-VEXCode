@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
-/*    Author:       VEX                                                       */
-/*    Created:      Tuesday, December 11, 2007, Birth of a Legend                                          */
-/*    Description:  Competition Template                                      */
+/*    Author:       Gary, Ray, and Leo - 10K Robotics                         */
+/*    Created:      Saturday, October 7, 2023, Birth of a Legend              */
+/*    Description:  Master VEX Code                                           */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 
@@ -19,6 +19,8 @@
 // lowerEX              digital_out   C               
 // inertial1            inertial      14              
 // ---- END VEXCODE CONFIGURED DEVICES ----
+
+// change test
 
 #include "vex.h"
 
