@@ -1,9 +1,9 @@
 /*----------------------------------------------------------------------------*/
 /*                                                                            */
 /*    Module:       main.cpp                                                  */
-/*    Author:       Gary, Ray, and Leo - 10K Robotics                         */
-/*    Created:      Saturday, October 7, 2023, Birth of a Legend              */
-/*    Description:  Master VEX Code                                           */
+/*    Author:       VEX                                                       */
+/*    Created:      Tuesday, December 11, 2007, Birth of a Legend                                          */
+/*    Description:  Competition Template                                      */
 /*                                                                            */
 /*----------------------------------------------------------------------------*/
 
@@ -20,8 +20,6 @@
 // inertial1            inertial      14              
 // ---- END VEXCODE CONFIGURED DEVICES ----
 
-// change test
-
 #include "vex.h"
 
 using namespace vex;
@@ -33,13 +31,15 @@ competition Competition;
 
 //controller Controller = controller(primary);
 
-motor left1 = motor(PORT1, ratio6_1, true);
+motor left1 = motor(PORT15, ratio6_1, true);
 motor left2 = motor(PORT11, ratio6_1, true);
-motor_group LeftDrive = motor_group(left1, left2);
+motor left3 = motor(PORT12, ratio6_1, true);
+motor_group LeftDrive = motor_group(left1, left2, left3);
 
 motor right1 = motor(PORT2, ratio6_1, false);
 motor right2 = motor(PORT14, ratio6_1, false);
-motor_group RightDrive = motor_group(right1, right2);
+motor right3 = motor(PORT17, ratio6_1, false);
+motor_group RightDrive = motor_group(right1, right2, right3);
 
 drivetrain Drivetrain = drivetrain(LeftDrive, RightDrive, 3.25, 11.5, 11.5, inches);
 
@@ -249,7 +249,6 @@ void pre_auton(void) {
   cata.setStopping(hold);
   cata.setMaxTorque(100, percent);
 
-  expansion.set(false);
   rotation1.setPosition(0.0, degrees);
   inertial1.setHeading(0, degrees);
 
@@ -411,16 +410,6 @@ void cata_stop_forward() {
   cata.stop();
 }
 
-void onevent_Controller1ButtonA_pressed_0() {
-  expansion.set(true);
-  lowerEX.set(true);
-}
-
-void onevent_Controller1ButtonB_pressed_0() {
-  expansion.set(false);
-  lowerEX.set(false);
-}
-
 void onevent_Controller1ButtonX_pressed_0() {
   booster.set(true);
 }
@@ -515,8 +504,6 @@ int main() {
   Controller1.ButtonR2.released(cata_stop_reverse);
   Controller1.ButtonUp.pressed(cata_forward);
   Controller1.ButtonUp.released(cata_stop_forward);
-  Controller1.ButtonA.pressed(onevent_Controller1ButtonA_pressed_0);
-  Controller1.ButtonB.pressed(onevent_Controller1ButtonB_pressed_0);
   Controller1.ButtonX.pressed(onevent_Controller1ButtonX_pressed_0);
   Controller1.ButtonY.pressed(onevent_Controller1ButtonY_pressed_0);
   Controller1.ButtonLeft.pressed(onevent_Controller1ButtonLeft_pressed_0);

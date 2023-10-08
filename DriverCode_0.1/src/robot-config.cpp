@@ -9,8 +9,7 @@ brain  Brain;
 
 // VEXcode device constructors
 rotation rotation1 = rotation(PORT5, false);
-digital_out expansion = digital_out(Brain.ThreeWirePort.B);
-motor intake = motor(PORT15, ratio6_1, false);
+motor intake = motor(PORT16, ratio6_1, false);
 motor cata = motor(PORT21, ratio18_1, false);
 controller Controller1 = controller(primary);
 digital_out booster = digital_out(Brain.ThreeWirePort.A);

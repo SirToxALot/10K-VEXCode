@@ -4,7 +4,6 @@ extern brain Brain;
 
 // VEXcode devices
 extern rotation rotation1;
-extern digital_out expansion;
 extern motor intake;
 extern motor cata;
 extern controller Controller1;
