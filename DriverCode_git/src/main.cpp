@@ -226,12 +226,13 @@ void goTo(double targetX, double targetY) {
   // Move the robot forward to the target location
   goStraight(distance);
   
+  // Displays coord values on controller screen
   Controller1.Screen.setCursor(1, 1);
-  Controller1.Screen.print(xPos);
+  Controller1.Screen.print("targetPos: " + "(" + targetX + ", " + targetY + ")");
   Controller1.Screen.setCursor(2, 1);
-  Controller1.Screen.print(yPos);
+  Controller1.Screen.print("actualPos: " + "(" + xPos + ", " + yPos + ")");
   Controller1.Screen.setCursor(3, 1);
-  Controller1.Screen.print(heading);
+  Controller1.Screen.print("--------------------------------------------------");
     
 }
 
