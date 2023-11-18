@@ -375,8 +375,9 @@ int SecondaryPreAuton() {
 
 // "when Controller1 ButtonL1 pressed" hat block
 void intake_in() {
+  intake.setVelocity(100, percent);
   intake.spin(forward);
-  wait(1.0, seconds);
+  wait(0.75, seconds);
   waitUntil((Controller1.ButtonL1.pressing() || Controller1.ButtonL2.pressing()));
   intake.stop();
   wait(0.25, seconds);
@@ -391,6 +392,7 @@ void intake_in() {
 
 // "when Controller1 ButtonL2 pressed" hat block
 void intake_out() {
+  intake.setVelocity(50, percent);
   intake.spin(reverse);
 }
 
@@ -403,7 +405,7 @@ void intake_stop() {
 void cata_fire() {
   cata.spin(forward);
   wait(0.75, seconds);
-  waitUntil(rotation1.position(degrees) > 104);
+  waitUntil(rotation1.position(degrees) > 80);
   wait(0.00, seconds);
   cata.stop();  
 }
