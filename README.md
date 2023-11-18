@@ -1,12 +1,23 @@
-# 10K-VEXCode
-This github repository contains all current and past driver, autonamous, and competition code for 10K Robotics since November 18, 2023.
+10K-VEXCode
+This GitHub repository serves as the central hub for all current and past driver, autonomous, and competition code developed by 10K Robotics since November 18, 2023.
 
-Guidelines for using this repo:
-  1) All program folders (one's that contain the main.cpp and all relevent libraries) should be important in the MAIN branch of the repository. If you screw this up, Gary will come find you and make sure you don't do it again (you don't wanna find out).
-  2) Whenever you start a session to work on ANY code in the repo, make sure you pull from the github repo to update to any changes. If there are any conflicts, please say something in the team discord to resolve those conflicts with whoever made those changes.
-  3) After finishing a session with changes, commit and push your changes back to the MAIN branch, so the rest of the team can view and access those changes you make.
+Guidelines for Repository Usage:
+Organizing Code:
 
-Any questions regarding the use of this repository should be sent to # Gary Fu:
+All program folders, those containing the main.cpp and relevant libraries, must be imported into the MAIN branch of the repository.
+Failure to adhere to this guideline may result in intervention by Gary to ensure compliance. You don't want to experience that. Trust me.
+
+Updating Code:
+
+Before starting any coding session, make sure to pull the latest changes from the GitHub repository to incorporate any updates made by other team members prior to your session.
+In case of conflicts during the pull, promptly communicate and resolve the conflicts through the team Discord channel with the person responsible for the changes.
+
+Committing Changes:
+
+After completing a coding session with modifications, commit and push your changes back to the MAIN branch.
+This ensures that the entire team has visibility into and can access the latest modifications.
+
+For any inquiries or assistance regarding the use of this repository, please contact Gary Fu:
+
 Email: garyfu001@outlook.com
-OR
 Discord: miniaturetoast
