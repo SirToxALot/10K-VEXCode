@@ -1,4 +1,3 @@
-# 10K-VEXCode
 This GitHub repository serves as the central hub for all current and past driver, autonomous, and competition code developed by 10K Robotics since November 18, 2023.
 
 Guidelines for Repository Usage:
